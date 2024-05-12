@@ -1,0 +1,48 @@
+.login-container {
+    max-width: 400px; /* Максимальная ширина контейнера */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #333;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 100px auto;
+    background-color: var(--blue);
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .form-group {
+            width: 400px;
+            margin: 20px 0px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            input.text {
+                height: 25px;
+                width: 280px;
+                outline: none;
+            }
+        }
+        .error-message {
+            color: var(--error-red);
+        }
+        button {
+            margin: 20px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #629bf4;
+            // color: var(--main)
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p {
+            color: var(--main)
+        }
+    }
+
+}
