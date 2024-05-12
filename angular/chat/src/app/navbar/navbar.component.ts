@@ -13,4 +13,8 @@ export class NavbarComponent {
   public redirectLogin() {
     this.router.navigate(['/login'])
   }
+  
+  public redirectHome() {
+    this.router.navigate(['/'])
+  }
 }
