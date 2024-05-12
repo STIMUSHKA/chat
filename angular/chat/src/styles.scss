@@ -1,5 +1,46 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../src/assets/fonts/roboto/Roboto-Regular.ttf') format('ttf'),
+  /* Добавьте другие форматы шрифтов, если необходимо */
+}
+
+:root {
+  --light-blue: #d2d9e2; /* Основной цвет */
+  --blue: #c7ced6; /* Основной цвет */
+  --dark-blue: #99a4b1; /* Основной цвет */
+  --main: #333;
+  --error-red: #b10000;
+}
+
+  
 /* You can add global styles to this file, and also import other style files */
 body {
-    margin: 0;
-    background-color: #ccd3db;
+  margin: 0;
+  background-color: var(--light-blue);
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+button {
+  background-color: var(--blue);
+  border: solid 1px var(--main);
+  border-radius: 5px;
+  padding: 5px 30px;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--dark-blue);
+}
+button:disabled {
+  cursor: auto;
+  background-color: var(--light-blue);
+}
+
+
+input {
+  border: solid 1px var(--main);
+  border-radius: 5px;
+  background-color: var(--light-blue);
 }
