@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="content">
+        <h2>User Profile</h2>
+        <p><strong>Username:</strong> {{ currentUser.username }}</p>
+        <p><strong>Email:</strong> {{ currentUser.email }}</p>
+        <!-- Добавьте другие данные пользователя, если нужно -->
+
+        <button (click)="logout()">logout</button>
+    </div>
+</div>

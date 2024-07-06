@@ -4,7 +4,8 @@
       <img src="../../assets/imgs/logo.png" (click)="redirectHome()" alt="logo">
     </div>
     <div class="actions">
-      <a (click)="redirectLogin()" class="login-button">Login</a>
+      <a *ngIf="!isLogedIn()" (click)="redirectLogin()" class="login-button">Log in</a>
+      <a *ngIf="isLogedIn()" (click)="redirectToProfile()" class="login-button">{{userName}}</a>
     </div>
   </div>
 </header>

@@ -1,0 +1,15 @@
+.container {
+    max-width: 400px; /* Максимальная ширина контейнера */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #333;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 100px auto;
+    background-color: var(--blue);
+  
+  .content {
+    text-align: center;
+  }
+}  
