@@ -35,7 +35,7 @@ export class RegisterComponent {
         this.router.navigate(['/profile']);
       })
     } else {
-      console.log('Login form is invalid');
+      console.error('Login form is invalid');
     }
   }
 
