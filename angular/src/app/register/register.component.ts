@@ -3,11 +3,11 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss']
 })
-export class LoginComponent {
+export class RegisterComponent {
   loginForm: FormGroup;
 
   constructor(
@@ -20,7 +20,7 @@ export class LoginComponent {
     });
   }
 
-  public login() {
+  public register() {
     if (this.loginForm.valid) {
       console.log('Login form is valid');
       console.log('Email:', this.loginForm.value.email);
@@ -30,7 +30,8 @@ export class LoginComponent {
     }
   }
 
-  public redirectToRegister() {
-    this.router.navigate(['/register'])
+  public redirectToLogin() {
+    this.router.navigate(['/login'])
+
   }
 }

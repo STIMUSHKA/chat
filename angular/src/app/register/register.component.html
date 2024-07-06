@@ -1,6 +1,6 @@
 <div class="login-container">
-  <form (ngSubmit)="login()" [formGroup]="loginForm">
-    <h2>Login</h2>
+  <form (ngSubmit)="register()" [formGroup]="loginForm">
+    <h2>Registration</h2>
     <div>
       <div class="form-group">
         <label for="email">Email:</label>
@@ -22,7 +22,7 @@
         <div *ngIf="loginForm.get('password').errors && loginForm.get('password').errors['maxlength']">Password cannot exceed 20 characters.</div>
       </div>
     </div>
-    <button type="submit" [disabled]="loginForm.invalid">Login</button>
-    <p>Don't have an account? <a (click)="redirectToRegister()">Register</a></p>
+    <button type="submit" [disabled]="loginForm.invalid">Register</button>
+    <p>Already have an account? <a (click)="redirectToLogin()">Login</a></p>
   </form>
 </div>

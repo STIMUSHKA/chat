@@ -6,11 +6,13 @@ import { LoginComponent } from './login/login.component';
 import { routes } from './app.routes';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    RegisterComponent,
     NavbarComponent
   ],
   imports: [
